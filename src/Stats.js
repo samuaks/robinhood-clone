@@ -48,7 +48,7 @@ function Stats() {
 
     const getStocksData = (stock) => {
       return axios
-        .get(`https://finnhub.io/api/v1/quote?symbol=${stock}&token=bvs6u3f48v6oefuvbt9g`)
+        .get(`https://finnhub.io/api/v1/quote?symbol=${stock}&token=${token}`)
         .catch((error) => {
           console.error("Error", error.message);
         })
